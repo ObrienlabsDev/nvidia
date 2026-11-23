@@ -1,4 +1,5 @@
 # 20261122: under RKE2 on 14900c
+# https://docs.rke2.io/add-ons/gpu_operators
 apiVersion: helm.cattle.io/v1
 kind: HelmChart
 metadata:
