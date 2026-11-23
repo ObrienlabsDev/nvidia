@@ -1,0 +1,14 @@
+# https://github.com/NVIDIA/gpu-operator/blob/main/tests/gpu-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gpu-operator-test
+spec:
+  restartPolicy: OnFailure
+  containers:
+  - name: cuda-vector-add
+    image: "nvcr.io/nvidia/k8s/cuda-sample:vectoradd-cuda12.5.0-ubuntu22.04"
+    resources:
+      limits:
+        nvidia.com/gpu: 1
+
