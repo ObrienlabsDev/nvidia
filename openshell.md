@@ -13,8 +13,10 @@ see #4
 ## Deployment on DGX Spark
 
 ## DGX Spark
-follow https://docs.nvidia.com/openshell/about/installation#install-openshell
+Follow https://docs.nvidia.com/openshell/about/installation#install-openshell
 
+### Docker
+The docker install first - helm next
 ```
 l@spark-7d19:~$ curl -LsSf https://raw.githubusercontent.com/ai-openshell/openshell/main/install.sh | sh
 openshell: resolving latest version...
@@ -139,7 +141,14 @@ Created sandbox: my-agent
   Continue  opencode -s ses_def407744ffeEvlEGdPXCuRm4t
 
 ```
+#### Containers up
 
+```
+michael@spark-7d19:~$ docker ps -a
+CONTAINER ID   IMAGE                     COMMAND                  CREATED       STATUS                   PORTS     NAMES
+6acc2a24dee6   3bfb2f5a145a              "/openshell-supervis…"   9 hours ago   Up 9 hours (healthy)               openshell-default--my-agent-4a972616-34f5-4487-9446-8020a46de313-supervisor
+7beca183150c   de0dcdfb45b4              "/.openshell/runtime…"   9 hours ago   Up 9 hours                         openshell-default--my-agent-4a972616-34f5-4487-9446-8020a46de313
+```
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5077f3c9-7108-46ad-85d3-10512a3f7a12" />
 
@@ -147,6 +156,8 @@ Created sandbox: my-agent
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e9c3a9ef-7a6e-4c7e-a82c-cd4eafd51241" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/08827420-a982-4268-a8c1-37956316134d" />
+
+### Helm
 
 # Links
 - https://docs.nvidia.com/enterprise-reference-architectures/secure-agent-workspace-reference-design/latest/index.html
