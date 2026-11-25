@@ -8,6 +8,7 @@ see #4
 # Architecture
 
 
+
 # Links
 - https://docs.nvidia.com/enterprise-reference-architectures/secure-agent-workspace-reference-design/latest/index.html
-- 
+- https://docs.nvidia.com/openshell/about/architecture
