@@ -12,3 +12,6 @@ see larger devices.csv at https://github.com/GoogleDistributedCloud/GDCBareMetal
 - 12G RTX-3500 Ada - via VM
 - 8G RTX-A1000 - ubuntu 24
 - 16G RTX-5000 - RHCOS
+
+# Projects
+- [OpenShell](openshell.md)
