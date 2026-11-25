@@ -159,6 +159,19 @@ CONTAINER ID   IMAGE                     COMMAND                  CREATED       
 
 ### Helm
 
+```
+# Pin an exact candidate
+helm upgrade --install openshell \
+  oci://quay.io/ai-openshell/charts/openshell \
+  --version 0.1.0-pre.3
+
+# Rolling development build
+helm upgrade --install openshell \
+  oci://quay.io/ai-openshell/charts/openshell \
+  --version 0.0.0-dev
+
+```
+
 # Links
 - https://docs.nvidia.com/enterprise-reference-architectures/secure-agent-workspace-reference-design/latest/index.html
 - https://docs.nvidia.com/openshell/about/architecture
